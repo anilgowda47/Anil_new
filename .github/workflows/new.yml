@@ -9,7 +9,7 @@ jobs:
     - name: Displaying statement 2
       run: echo "Github actions is easy to learn"
   second-job:
-    runs-on: ubuntu-23.04
+    runs-on: ubuntu-24.04
     steps:
     - name: check java version
       run: java --version
