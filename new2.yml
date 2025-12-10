@@ -1,0 +1,10 @@
+name: sample test workflow
+on: workflow_dispatch
+jobs:
+ first-job:
+    runs-on: ubuntu-24.04
+    steps:
+    - name: check java version
+      run: java --version
+    - name: check os version
+      run: lsb_release -a
