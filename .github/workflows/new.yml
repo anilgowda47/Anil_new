@@ -1,0 +1,18 @@
+name: sample test workflow
+on: workflow_dispatch
+jobs:
+  first-job: 
+    runs-on: ubuntu-latest
+    steps:
+    - name: Displaying statement 1
+      run: echo "Github actions is easy and simple"
+    - name: Displaying statement 2
+      run: echo "Github actions is easy to learn"
+  second-job:
+    runs-on: ubuntu-23.04
+    steps:
+    - name: check java version
+      run: java --version
+    - name: check os version
+      run: lsb_release -a
+  
